@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function findstud(st)
+        {
+            for(let i=0;i<st.length;i++)
+            {
+                if(st[i].marks<60)
+                {
+                    document.write(st[i].sid+" "+st[i].sname+" "+st[i].marks)
+                }
+            }
+        }
+        var stud=[
+            
+        {sid:101,sname:'Jyoti',marks:57},
+        {sid:102,sname:'Kirti',marks:87}]
+
+        console.log(stud)
+
+        findstud(stud);
+    </script>
+</body>
+</html>

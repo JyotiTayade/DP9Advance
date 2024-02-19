@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Store data in key -value fom. -->
+    <h1 id="N1"></h1>
+    <script>
+
+        if(typeof(Storage) !== 'undefined')
+        {
+            localStorage.setItem("UserName" , "Jyoti")
+            document.getElementById('N1').innerHTML=localStorage.getItem('UserName')
+            //document.write(UserName)
+        }
+        else
+        {
+            document.getElementById('N1').innerHTML='Invalid Data'
+        }
+
+        console.log()
+    </script>
+</body>
+</html>

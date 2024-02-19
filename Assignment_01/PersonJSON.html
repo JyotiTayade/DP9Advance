@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let personobj = '{"name": "Jyoti", "age": 25, "city": "Nashik"}';
+        let person = JSON.parse(personobj);     //convert the JSON string into a JavaScript obj.
+
+    
+        document.write("===person object===<br>");
+        document.write("Name: " + person.name + "<br>");
+        document.write("Age: " + person.age + "<br>");
+        document.write("City: " + person.city + "<br><br>");
+
+        var personsJSON = '[{"name": "Aarti", "age": 30, "city": "Mumbai"}, {"name": "Bhavesh", "age": 28, "city": "Pune"}]';
+        var personsArray = JSON.parse(personsJSON);
+
+        // Displaying the array of persons
+        document.write("===Array of Persons===<br>");
+        for (var i = 0; i < personsArray.length; i++)
+         {
+            document.write("Person " + (i + 1) + ":<br>");
+            document.write("Name: " + personsArray[i].name + "<br>");
+            document.write("Age: " + personsArray[i].age + "<br>");
+            document.write("City: " + personsArray[i].city + "<br><br>");
+        }
+
+    </script>
+</body>
+</html>

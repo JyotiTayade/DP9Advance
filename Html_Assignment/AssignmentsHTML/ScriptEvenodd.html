@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="number"></p>
+    <script>
+        // Check if num is even or odd
+        var num = prompt('Enter the number');
+    
+        // Use the modulo operator (%) to check if the number is even or odd
+        if (num % 2 == 0) 
+        {
+            document.getElementById('number').innerHTML = 'Number is Even';
+        }
+        else 
+        {
+            document.getElementById('number').innerHTML = 'Number is Odd';
+        }
+    </script>
+</body>
+</html>

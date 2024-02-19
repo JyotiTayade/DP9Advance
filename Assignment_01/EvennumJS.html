@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        function Checkeven(arr)
+        {
+            document.write("===even number===<br>")
+            for (let i = 0; i < arr.length; i++)
+            {
+                if (arr[i] % 2 === 0)
+                {
+                    document.write(arr[i] + "<br>");
+                }
+            }
+        }
+        var num =[4,10,3,6,7,9,1]
+        document.write(num+ "<br>")
+        Checkeven(num)
+    </script>
+</body>
+</html>

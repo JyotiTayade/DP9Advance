@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="f1"></h1>
+
+    <div id="d1">  </div>
+    <script>
+
+        function display()
+        {
+            document.getElementById('f1').innerHTML="Hello ...."
+        }
+
+         setTimeout(display)
+        function showTime()
+        {
+            let dt=new Date()
+            let ans=dt.getHours()+ " : "+dt.getMinutes()
+
+            document.getElementById('d1').innerHTML=ans
+        }
+
+        showTime()
+        setInterval(showTime,1800)
+    </script>
+</body>
+</html>

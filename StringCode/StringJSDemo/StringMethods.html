@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str='I am Indian'
+
+        document.write(str)
+
+        document.write("<br>" +str.length)
+
+        //works of a position
+
+        document.write("<br>  char at position ="  +str.charAt(6))
+    //convert uupercase lower case
+
+       document.write("<br> Uppercase=" +str.toUpperCase())
+
+       document.write("<br>  Lowercase=" +str.toLowerCase())
+
+       document.write("<br>" +str.substring(3,7)) //2 perameter
+       document.write("<br>" +str.substr(3))  //one perameter
+
+
+       document.write("<br>" +str.substr(3,3))
+
+       //concate method  (join the words)
+
+       document.write("<br>" +str.concat(' ','First','.'))
+
+       //trim method (remove spaces)
+       document.write("<br>" +str.trimStart())
+
+       //replace method
+       document.write("<br>" +str.replace('am','like'))
+
+
+
+       //split method ,break the sentences into a words
+       document.write("<br>" +str.split(' '))
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+
+div.Static{
+    position:static;
+    border: 2px solid  red;
+
+    padding: 2%;
+    margin: 2%;
+
+    
+}
+
+div.relative{
+
+    position:relative;
+    border: 2px solid  blueviolet;
+    left: 50px;
+    margin: 2%;
+    
+}
+
+div{
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    border: 2px solid  green;
+}

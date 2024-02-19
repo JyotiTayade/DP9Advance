@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var city=['Pune','Mumbai','Nashik','Delhi']
+
+    document.write(city)
+
+    document.write("<br>"  +city.length)
+
+//     let cityname=city.at(1)
+
+// document.write("<br>"+cityname)
+
+// city.push('Nasik')
+
+// document.write("<br>"+city)
+
+// city.unshift('Banglor')
+// document.write("<br>"+city)
+
+
+city.pop()
+document.write("<br>"+city)
+
+city.shift()
+document.write("<br>"+city)
+
+// delete city[1]
+// document.write("<br>"+city)
+document.write("<br>.......................................................")
+city.splice(1,0,'banglor','Nagpur')
+
+document.write("<br>"+city)
+
+document.write("<br>/////////////////////////////////")
+// var newcity=city.slice(2);
+
+
+// document.write("<br>"+newcity)
+
+
+var newcity=city.slice(1,3)
+document.write("<br>"+newcity)
+
+
+var mycity=['jaipur','indor']
+document.write("<br>"+city)
+document.write("<br>"+mycity)
+
+var allcity=city.concat(mycity)
+
+document.write("<br>......."+allcity)
+   </script> 
+</body>
+</html>

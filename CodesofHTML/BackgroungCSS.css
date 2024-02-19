@@ -1,0 +1,16 @@
+
+
+body{
+   /* background-color: blueviolet;*/
+
+   background-image: url("HtmlSymbol.png");
+   background-repeat: repeat;
+   
+   background-position: right bottom;
+}
+
+h1{
+    background-color:blue;
+    opacity: 0.9;
+    color: black;
+}

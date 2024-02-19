@@ -1,0 +1,68 @@
+
+element{
+    color: blueviolet;
+}
+
+h1{
+    /*color:chartreuse;*/
+    background-color: cadetblue; 
+    margin: 200px;
+    /* border: 10px; */
+    border-color: blue;
+    border-style: solid ;
+
+    padding: 50px;
+
+    
+}
+h2{
+    color:blue;
+    /* background-color: cadetblue; */
+    margin: 200px;
+    /* border: 10px; */
+    border-color: black;
+    border-style: dashed ;
+ 
+
+
+}
+h3{
+    color:red;
+    /* background-color: cadetblue; */
+    margin: 200px;
+    /* border: 10px; */
+    border-color: green;
+    border-style: dotted ;
+}
+h4{
+    color:chartreuse;
+    /* background-color: cadetblue; */
+    margin: 200px;
+    /* border: 10px; */
+    border-color: blue;
+    border-style: double;
+}
+
+
+/* p{
+    color:brown;
+    text-align: center;
+} */
+/* body{
+    background-color: azure;
+} */
+/* Id selector */
+
+#demo{
+color:crimson;
+text-align: center;
+}
+
+/* class selector */
+
+.myclass
+{
+    color:darkcyan;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}

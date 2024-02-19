@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      function DispalyEmp(emp)
+      {
+        for(let i=0;i<emp.length;i++)
+        {
+            document.write(emp[i].eid+" "+emp[i].ename+" "+emp[i].sal+" <br>")
+        }
+      }
+
+      function CalculatePF(emp)
+      {
+        for(let i=0;i<emp.length;i++)
+        {
+            emp[i].sal=emp[i].sal*0.12
+        }
+        DispalyEmp(emp)
+      }
+        var emp=[{eid:111,ename:'Aaru',sal:20000},
+           {eid:112,ename:'Shubham',sal:25000}]
+
+           DispalyEmp(emp)
+           document.write("====================<br>")
+
+           CalculatePF(emp)
+    </script>
+</body>
+</html>

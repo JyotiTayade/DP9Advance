@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Person
+        {
+            id
+            name
+            birthyear
+
+            AcceptDetails(id,name,birthyear)
+            {
+                this.id= id;
+                this.name= name;
+                this.birthyear= birthyear;
+                //this.age=age;
+            }
+
+            Display()
+            {
+                document.write(this.id+" == "+this.name+" == "+this.birthyear)
+            }
+
+            CalculateAge()
+            {
+                var dt= new Date()
+                //this.age=(dt.getFullyear) -( this.birthyear)
+
+                document.write("<br> Age is = "    +(dt.getFullYear() - this.birthyear))
+            }
+        }
+
+        let prsn = new Person()
+
+        prsn.AcceptDetails(111,'Mahi',1992)
+
+        prsn.Display()
+
+        prsn.CalculateAge()
+    </script>
+</body>
+</html>

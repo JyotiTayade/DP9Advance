@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myarr=[4,6,3,1];
+
+        document.write(myarr);
+        document.write("<br>===with index====")
+
+        for(let i=0;i<myarr.length;i++)
+        {
+            document.write("<br>"  +i+" " +myarr[i])
+        }
+
+        document.write("<br>===index===")
+
+        for(let x in myarr)
+        {
+            document.write("<br>"  +x)
+        }
+        
+        document.write("<br>============")
+        for(let x in myarr)
+        {
+            document.write("<br>" +myarr)
+            break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Employee=[
+            
+        {eid:11, ename:'Jyoti',salary:5000},
+        {eid:12, ename:'Neha',salary:7000},
+        {eid:13, ename:'Jaya',salary:6000}]
+
+        for(var emp of Employee)
+        {
+            document.write(emp.eid+" "+emp.ename+" "+emp.salary)
+            document.write("<br>")
+        }
+        document.write("===============<br>")
+
+        for(var emp of Employee)
+        {
+            if(emp.salary>6000)
+            {
+                document.write(emp.eid+" "+emp.ename+" "+emp.salary)
+            }
+        }
+
+    </script>
+</body>
+</html>

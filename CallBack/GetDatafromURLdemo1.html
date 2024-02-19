@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="e1"></h1>
+    <script>
+         let myp= new Promise(function (resolve,reject)
+         {
+            let req=new XMLHttpRequest()
+            req.open('Get', 'https://reqres.in/api/users?page=2')
+            req.onload=function()
+            {
+                if(req.status == 200)
+                {
+                    resolve(req.response)
+                }
+                else
+                {
+                    reject('something is going wrong.....')
+                }
+            }
+
+            req.send()
+         })
+
+         myp.then(
+        function(success)
+        {
+                display(success)
+        },
+        function(error)
+        {
+                document.getElementById('e1').innerHTML='Somthing is Wrong....'
+        }
+    )
+
+    function display(success)
+    {
+        let result=JSON.parse(success)
+
+        let data="<table border=1 width=50%><tr><th>Id</th><th>Email</th><th>First_name</th><th>Last_name</th><th>Avtar</th></tr>"
+            data+="<tr><td>"+result.id+"</td>"+"<td>"+result.email+"</td>"+"<td>"+result.first_name+"</td>"+"<td>"+result.last_name+"</td>"+"<td>"+result.avtar+"</td></tr>"
+            data+="</table>"
+
+            document.getElementById('e1').innerHTML=data
+
+
+    }
+    </script>
+</body>
+</html>

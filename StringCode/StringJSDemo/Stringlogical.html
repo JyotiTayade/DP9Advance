@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function StrRev(str)
+        {
+            let word= ' '
+           for(let i=0;i<str.length;i++)
+           {
+            word=str.charAt(i)+word
+           }
+           document.write(word)
+        }
+
+        function Showvowels(str)
+        {
+            document.write("==vowels==")
+           for(let i=0;i<str.length;i++)
+           {
+            if( str.charAt(i)=="a" || str.charAt(i)=="A" || str.charAt(i)=="e" || str.charAt(i)=="E" || str.charAt(i)=="i" || str.charAt(i)=="I" || str.charAt(i)=="o" || str.charAt(i)=="O" || str.charAt(i)=="u" || str.charAt(i)=="U" )
+            {
+               // document.write("==vowels==")
+                document.write( "<br>" +str.charAt(i))
+            }
+           }
+        }
+
+
+
+        var str=prompt("Enter the string")
+        StrRev(str)
+
+        document.write(" <br>" )
+
+        Showvowels(str)
+    </script>
+</body>
+</html>

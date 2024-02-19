@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="number"></p>
+    <script>
+        //check num is +ve ,-ve or zero
+        var num=prompt('enter the number')
+        if(num>0)
+        {
+            document.getElementById('number').innerHTML='Number is positive'
+        }
+        else if(num<0)
+        {
+            document.getElementById('number').innerHTML='Number is negative'
+
+        }
+        else
+        {
+            document.getElementById('number').innerHTML='Number is zero'
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+         function DisplayEmp(emp)
+         {
+            for(let i=0;i<emp.length;i++)
+            {
+                document.write(emp[i].empid+" "+emp[i].empname+" "+emp[i].empsal+ "<br>")
+            }
+
+         }
+
+         function Increasesal(emp)
+         {
+            document.write("==increase sal==<br>")
+            for(let i=0;i<emp.length;i++)
+            {
+                if(emp[i].empsal <25000)
+                {
+                    emp[i].empsal=emp[i].empsal*1.1
+                }
+            }
+            DisplayEmp(emp)
+         }
+
+        var emp=
+         [{empid:121,empname:'Kunal',empsal:30000},
+          {empid:122,empname:'Grishma',empsal:18000},
+          {empid:123,empname:'Aarti',empsal:22000}]
+
+          DisplayEmp(emp)
+          document.write("<br>")
+
+          Increasesal(emp)
+    </script>
+</body>
+</html>

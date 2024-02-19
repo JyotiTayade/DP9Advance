@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../DP9Advance"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DP9Advance"
+	}
+}

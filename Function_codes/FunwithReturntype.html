@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="fun"></h1>
+    <script>
+        function Calculate(a,b)
+        {
+            //return a+b
+
+            let sum=a+b
+            return sum;
+        }
+         let ans= Calculate(7,2)
+         document.write(ans)
+
+         document.write("<br>"  +Calculate(5,2))
+
+         console.log("Addition = "  +Calculate(3,3))
+
+        document.getElementById('fun').innerHTML=  "Addition is = " +Calculate(6,3)
+    </script>
+</body>
+</html>

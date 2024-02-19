@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Displayname(car)
+        {
+            for(i=0;i<car.length;i++)
+            {
+                if (cars[i].price > 90000) 
+                {
+                    document.write("<br>");
+                    document.write("Car Name: " + cars[i].car_name);
+                }             
+            }
+        }
+        var car=[
+            {carid:1001,car_name:'Wegnor', price:120000},
+            {carid:1002,car_name:'Nexzone',price:80000},
+            {carid:1003,car_name:'Suzuki', price:100000}]
+
+            for(let x in car)
+            {
+                document.write("Car ID: " + car[x].carid + ", Car Name: " + car[x].car_name + ", Price: " + car[x].price + "<br>");
+                //break;
+            }
+
+            Displayname(car)
+    </script>
+</body>
+</html>

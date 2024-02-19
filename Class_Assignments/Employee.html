@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Employee
+        {
+            empid
+            empname
+            empsalary
+
+            AcceptDetails(empid,empname,empsalary)
+            {
+               this.empid=empid;
+               this.empname=empname;
+               this.empsalary=empsalary;
+            }
+            Display()
+            {
+               // document.write(this.empid+ " "+this.empname+" "+this.empsalary)
+
+                    for(let x in emp)
+                {
+                    document.write("Employee ID: " + this.empid + ", Employee Name: " + this.empname + ", Employee Salary: " + this.empsalary + "<br>");
+
+                    //document.write("Employee ID: " + emp[x].empid + ", Employee Name: " + emp[x].empname + ", Employee Salary: " + emp[x].empsalary + "<br>");
+                }
+           }
+        }
+
+        let emp= new Employee()
+        emp.AcceptDetails(111, ' Aarti',5000)
+        emp.AcceptDetails(112, ' Kirti',7000)
+        emp.AcceptDetails(113, ' Raj',9000)
+
+        // for(let x in emp)
+        // {
+        //     document.write("Employee ID: " + emp[x].empid + ", Employee Name: " + emp[x].empname + ", Employee Salary: " + emp[x].empsalary + "<br>");
+        // }
+
+        emp.Display()
+
+    </script>
+</body>
+</html>

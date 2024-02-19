@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        let person={name:' Jyoti ' , mobileno: 917798988747 ,
+
+        get data()
+        {
+            if(this.mobileno.toString().length === 10)
+            {
+                return this.name+" == "+this.mobileno
+
+            }
+            else
+            {
+                alert('Mismatched mobile no..')
+                return
+            }
+        },
+
+        set data(value)
+        {
+            [this.name , this.mobileno]=value.split(' ')
+        }
+            
+      }
+
+    
+       //person.data='Jyoti ,7798988747 ';
+       //alert(person.data)
+       alert(person.name)
+       alert(person.mobileno)
+
+    </script>
+</body>
+</html>

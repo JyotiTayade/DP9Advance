@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let user={
+
+            get accno()
+            {
+                return this.accno
+            },
+            set accno(value)
+            {
+                 this.accno = value
+            },
+            
+            set balance(value)
+            {
+                if(value<5000)
+                {
+                    alert("unsufficient balance please check...")
+                    //return
+                
+                }
+                else
+                {
+                    this.balance=value
+                    alert(this.balance)
+
+                }
+            },
+            get balance()
+            {
+                return this.balance
+            },
+        }
+      user.accno=403577;
+      user.balance=3000;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt('Enter the num1 value');
+        var num2 = prompt('Enter the num2 value');
+    
+        // Parse input values to numbers
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+    
+        var ans;
+        var choice = prompt('Choose an operation (1: Addition, 2: Subtraction, 3: Multiplication, 4: Division, 5: Mode)');
+    
+        switch (parseInt(choice)) {
+            case 1:
+                ans = num1 + num2;
+                document.write("Result: " + ans);
+                break;
+            case 2:
+                ans = num1 - num2;
+                document.write("Result: " + ans);
+                break;
+            case 3:
+                ans = num1 * num2;
+                document.write("Result: " + ans);
+                break;
+            case 4:
+               ans = num1 / num2;
+                document.write("Result: " + ans);
+                break;
+            case 5:
+               ans = num1 % num2;
+                document.write("Result: " + ans);
+                break;
+            default:
+                document.write("Invalid number");
+                break;
+        }
+    </script>
+</body>
+</html>

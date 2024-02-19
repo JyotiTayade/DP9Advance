@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        class Student
+        {
+            id
+            name
+
+            AcceptDetails(id,name)
+            {
+               this.id=id;
+               this.name=name;
+            }
+            Display()
+            {
+                document.write(this.id+ " "+this.name)
+            }
+        }
+
+        let Stu= new Student()
+        Stu.AcceptDetails(111, ' Aarti')
+
+        Stu.Display()
+    </script>
+</body>
+</html>
